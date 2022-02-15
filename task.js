@@ -1,11 +1,11 @@
-// task #1
+п»ї// task #1
 
 function parseCount(value) {
     const number = Number.parseInt(value, 10);
     if (number) {
         return number;
     }
-    throw new Error("Невалидное значение");
+    throw new Error("РќРµРІР°Р»РёРґРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ");
 }
 
 function validateCount(value) {
@@ -22,7 +22,7 @@ function validateCount(value) {
 class Triangle {
     constructor(a, b, c) {
         if (((a + b) < c) || ((a + c) < b) || ((c + b) < a)) {
-            throw new Error('Треугольник с такими сторонами не существует');
+            throw new Error('РўСЂРµСѓРіРѕР»СЊРЅРёРє СЃ С‚Р°РєРёРјРё СЃС‚РѕСЂРѕРЅР°РјРё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚');
             }
         this.leftSide = a;
         this.rightSide = b;
@@ -45,8 +45,8 @@ function getTriangle(a, b, c) {
     }
     catch(err) {
         const dummyTriangle = new Object();
-        dummyTriangle.getArea = function() {return "Ошибка! Треугольник не существует";};
-        dummyTriangle.getPerimeter = function() {return "Ошибка! Треугольник не существует";};
+        dummyTriangle.getArea = function() {return "РћС€РёР±РєР°! РўСЂРµСѓРіРѕР»СЊРЅРёРє РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚";};
+        dummyTriangle.getPerimeter = function() {return "РћС€РёР±РєР°! РўСЂРµСѓРіРѕР»СЊРЅРёРє РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚";};
         return dummyTriangle;
     }
 }
